@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13/03/2017 06:35:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="softwarepapeleria" name="Modelo.ClasesFramework.Usuarios" table="usuarios">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombre" type="string">
+      <column length="100" name="nombre"/>
+    </property>
+    <property name="apellido" type="string">
+      <column length="100" name="apellido"/>
+    </property>
+    <property name="rol" type="string">
+      <column length="50" name="rol"/>
+    </property>
+    <property name="credenciales" type="string">
+      <column length="20" name="credenciales"/>
+    </property>
+  </class>
+</hibernate-mapping>
